@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<title>The SAGE Codex · Command Reference · Christopher Hager</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="codex.css">
+</head><body>
+<div class="halftone"></div>
+<header class="hero">
+  <img src="glyphs/mark-light.png" alt="Christopher Hager logomark" class="logo" width="54" height="56">
+  <p class="eyebrow">SAGE · Command Reference · as of October 8, 2026</p>
+  <h1>The SAGE <em>Codex</em></h1>
+  <p class="lede">Every command we have built together, what it does, how often you actually reach for it, and what each run costs. Measured from 28 days of real use, not remembered.</p>
+  <div class="stats">
+    <div><b>465</b><span>command runs</span></div>
+    <div><b>11</b><span>commands built together</span></div>
+    <div><b>49</b><span>commands in the vault</span></div>
+    <div><b>6.2M</b><span>tokens of SAGE working</span></div>
+    <div><b>16.6</b><span>runs a day, on average</span></div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="sh"><img src="glyphs/ankh-light.png" alt="" width="20" height="20"><p class="kicker">Part one</p><h2>Built together</h2></div>
+  <p class="intro">Eleven commands that exist only in your system, in order of how often you use them. The three meters show the median run: wall-clock minutes, tool calls, and tokens SAGE wrote (thinking included). Shorter bars mean a lighter run. The longest bar on each meter belongs to /know-thyself.</p>
+  <div class="cards">
+  <article class="card tone-good">
+    <header>
+      <img class="glyph" src="glyphs/ankh-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/va</code><h3>The Front Desk</h3></div>
+      <span class="grade">Earns its weight</span>
+    </header>
+    <p class="what">Your practice manager, in one word.</p>
+    <p class="does">Wraps a Zoom session, handles reschedules and cancellations, chases unpaid sessions in Notion, books the follow-up, updates the client dossier, names and sends the recording, and works out the Entheos referral payout. It also rides along inside /start and /eod as the front-desk pass.</p>
+    <div class="use">
+      <div><b>13</b><span>runs</span></div>
+      <div><b>10</b><span>days used</span></div>
+      <div><b>Sep 14</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:29.8%"></i></span><span class="mv">5.3 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:59.2%"></i></span><span class="mv">29</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:34.3%"></i></span><span class="mv">23k tok</span></div>
+    </div>
+    <p class="verdict">The heaviest thing you run often, and it earns it: 29 tool calls a run is real admin across Notion, Gmail and Zoom that used to be yours. Now at v0.4 after ten audit refinements.</p>
+  </article>
+  <article class="card tone-good">
+    <header>
+      <img class="glyph" src="glyphs/scarab-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/harvest</code><h3>The Quote Miner</h3></div>
+      <span class="grade">High value</span>
+    </header>
+    <p class="what">Turns a recorded session into keepable moments.</p>
+    <p class="does">Reads a session and pulls the teaching moments worth keeping, timestamped and scored, ready to become a clip or a Words of Wisdom entry. Works on today's call or the whole back catalogue.</p>
+    <div class="use">
+      <div><b>8</b><span>runs</span></div>
+      <div><b>6</b><span>days used</span></div>
+      <div><b>Sep 22</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:31.5%"></i></span><span class="mv">5.6 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:44.9%"></i></span><span class="mv">22</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:41.8%"></i></span><span class="mv">27k tok</span></div>
+    </div>
+    <p class="verdict">Your most used build after /va. Five and a half minutes replaces an hour of scrubbing through a recording, which makes it the best value per run in the content pipeline.</p>
+  </article>
+  <article class="card tone-good">
+    <header>
+      <img class="glyph" src="glyphs/braid-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/movies</code><h3>The Family Film Library</h3></div>
+      <span class="grade">Lean</span>
+    </header>
+    <p class="what">The Hager movie night, with a memory.</p>
+    <p class="does">Logs what you watched and how each of you rated it, records what each person said, and recommends against the family's actual rating history. One CSV is the truth; the app rebuilds itself from it.</p>
+    <div class="use">
+      <div><b>5</b><span>runs</span></div>
+      <div><b>2</b><span>days used</span></div>
+      <div><b>Oct 3</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:11.8%"></i></span><span class="mv">2.1 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:12.2%"></i></span><span class="mv">6</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:13.1%"></i></span><span class="mv">8.6k tok</span></div>
+    </div>
+    <p class="verdict">Fast and light at six tool calls a run, 378 films deep. All five runs landed on its opening weekend; it has been quiet since.</p>
+  </article>
+  <article class="card tone-good">
+    <header>
+      <img class="glyph" src="glyphs/horus-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/compass-review</code><h3>The Product Oracle</h3></div>
+      <span class="grade">Lean</span>
+    </header>
+    <p class="what">Spicy, playful, honest. Before you buy anything.</p>
+    <p class="does">Researches a product, tool or subscription live, scores it against your values and your nervous system, and ends in a three-path buy decision.</p>
+    <div class="use">
+      <div><b>4</b><span>runs</span></div>
+      <div><b>2</b><span>days used</span></div>
+      <div><b>Oct 2</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:20.8%"></i></span><span class="mv">3.7 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:28.6%"></i></span><span class="mv">14</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:17.8%"></i></span><span class="mv">12k tok</span></div>
+    </div>
+    <p class="verdict">Lean for live research. Three verdicts in two days: a $7 chart not bought because the engine was already here, a full screen plan instead of one monitor, and FoundersCard held open with a standing travel check.</p>
+  </article>
+  <article class="card tone-good">
+    <header>
+      <img class="glyph" src="glyphs/ibis-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/recap</code><h3>The Recap Email</h3></div>
+      <span class="grade">Leanest</span>
+    </header>
+    <p class="what">The post-session email, in your voice.</p>
+    <p class="does">Turns a Wave transcript or your notes into the confirmed format: a subject line with teeth, flowing paragraphs, Integration Practices, the closing reflection and the door-open line. Drafted to Gmail, never sent.</p>
+    <div class="use">
+      <div><b>3</b><span>runs</span></div>
+      <div><b>3</b><span>days used</span></div>
+      <div><b>Sep 11</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:12.9%"></i></span><span class="mv">2.3 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:6.1%"></i></span><span class="mv">3</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:14.4%"></i></span><span class="mv">9.5k tok</span></div>
+    </div>
+    <p class="verdict">The leanest writer in the system at three tool calls a run. Carried over from the original Sage project as v0.1, so it is also the oldest thing we built.</p>
+  </article>
+  <article class="card tone-new">
+    <header>
+      <img class="glyph" src="glyphs/arm-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/cmo</code><h3>The Numbers Half</h3></div>
+      <span class="grade">New, promising</span>
+    </header>
+    <p class="what">Marketing intelligence that never pitches.</p>
+    <p class="does">Reads campaign numbers (opens, replies, seats against target), explains why a rate moved, and names who to talk to next and in what channel. No outbound surface at all, by design.</p>
+    <div class="use">
+      <div><b>3</b><span>runs</span></div>
+      <div><b>2</b><span>days used</span></div>
+      <div><b>Oct 7</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:18.5%"></i></span><span class="mv">3.3 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:26.5%"></i></span><span class="mv">13</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:17.0%"></i></span><span class="mv">11k tok</span></div>
+    </div>
+    <p class="verdict">Built yesterday, three runs already, all brisk. Too new for a fair verdict; early signs are good.</p>
+  </article>
+  <article class="card tone-deep">
+    <header>
+      <img class="glyph" src="glyphs/crescent-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/dream-temple</code><h3>The Dream Temple</h3></div>
+      <span class="grade">Deep by design</span>
+    </header>
+    <p class="what">Jungian dream interpretation, numbered and filed.</p>
+    <p class="does">Reads a dream through the Dream Temple lens, assigns it the next number in the archive and files it. The archive passed Dream #199 this week.</p>
+    <div class="use">
+      <div><b>2</b><span>runs</span></div>
+      <div><b>2</b><span>days used</span></div>
+      <div><b>Sep 15</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:57.3%"></i></span><span class="mv">10.2 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:59.2%"></i></span><span class="mv">29</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:60.6%"></i></span><span class="mv">40k tok</span></div>
+    </div>
+    <p class="verdict">Slow on purpose. About ten minutes per dream, the second most expensive build per run. The depth is the point, so this is a fair price.</p>
+  </article>
+  <article class="card tone-deep">
+    <header>
+      <img class="glyph" src="glyphs/sun-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/know-thyself</code><h3>The Deep Read</h3></div>
+      <span class="grade">Deepest dive</span>
+    </header>
+    <p class="what">Astrology, Human Design and Gene Keys as one story.</p>
+    <p class="does">Weaves all three systems into a single narrative reading, delivered as a book-styled page. Charts are computed locally from the family lane, never fetched.</p>
+    <div class="use">
+      <div><b>1</b><span>run</span></div>
+      <div><b>1</b><span>day used</span></div>
+      <div><b>Oct 5</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:100.0%"></i></span><span class="mv">17.8 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:100.0%"></i></span><span class="mv">49</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:100.0%"></i></span><span class="mv">66k tok</span></div>
+    </div>
+    <p class="verdict">The single most expensive run in the whole system: 18 minutes and 49 tool calls. A once-a-season instrument, and it should stay one.</p>
+  </article>
+  <article class="card tone-quiet">
+    <header>
+      <img class="glyph" src="glyphs/water-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/thread</code><h3>The Thread</h3></div>
+      <span class="grade">Lean, rarely used</span>
+    </header>
+    <p class="what">A session, read for your eyes only.</p>
+    <p class="does">Turns a client transcript into a scaled reflection across seven sections, ending in a Bill Burr style comedic parable that lands what the client most needs. Private. Never client-facing.</p>
+    <div class="use">
+      <div><b>1</b><span>run</span></div>
+      <div><b>1</b><span>day used</span></div>
+      <div><b>Sep 29</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:29.2%"></i></span><span class="mv">5.2 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:8.2%"></i></span><span class="mv">4</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:29.7%"></i></span><span class="mv">19k tok</span></div>
+    </div>
+    <p class="verdict">Four tool calls, then pure writing. Reached for once since it was built.</p>
+  </article>
+  <article class="card tone-quiet">
+    <header>
+      <img class="glyph" src="glyphs/mark-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/lightning</code><h3>The Lightning List</h3></div>
+      <span class="grade">Fastest, under-fired</span>
+    </header>
+    <p class="what">Catches the person who says &quot;keep me in mind.&quot;</p>
+    <p class="does">One row, five fields, in the vault, the moment someone says they want the next round or a session ends with more available.</p>
+    <div class="use">
+      <div><b>1</b><span>run</span></div>
+      <div><b>1</b><span>day used</span></div>
+      <div><b>Sep 11</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:5.1%"></i></span><span class="mv">0.9 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:12.2%"></i></span><span class="mv">6</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:5.9%"></i></span><span class="mv">3.9k tok</span></div>
+    </div>
+    <p class="verdict">The fastest build in the system, under a minute. Also the most under-fired: on Sep 14 it was measured catching 1 of 15 moments that should have triggered it.</p>
+  </article>
+  <article class="card tone-new">
+    <header>
+      <img class="glyph" src="glyphs/mark-light.png" alt="" width="28" height="28">
+      <div><code class="cmd">/graphify</code><h3>The Map Maker</h3></div>
+      <span class="grade">Brand new</span>
+    </header>
+    <p class="what">Your system, drawn as a map.</p>
+    <p class="does">Maps a skill, a project, a domain or the whole vault into a visual knowledge graph with clusters, hub concepts and path tools. First map: everything /va touches.</p>
+    <div class="use">
+      <div><b>1</b><span>run</span></div>
+      <div><b>1</b><span>day used</span></div>
+      <div><b>Oct 8</b><span>built</span></div>
+    </div>
+    <div class="meters">
+      <div class="m"><span class="ml">Time</span><span class="mt"><i style="width:34.8%"></i></span><span class="mv">6.2 min</span></div>
+      <div class="m"><span class="ml">Tool calls</span><span class="mt"><i style="width:22.4%"></i></span><span class="mv">11</span></div>
+      <div class="m"><span class="ml">Words of work</span><span class="mt"><i style="width:17.3%"></i></span><span class="mv">11k tok</span></div>
+    </div>
+    <p class="verdict">Built today. Its instructions are the heaviest of anything we built (49 KB loaded per run), so it belongs on request, not on reflex.</p>
+  </article></div>
+</section>
+
+<section>
+  <div class="sh"><img src="glyphs/horus-light.png" alt="" width="20" height="20"><p class="kicker">Part two</p><h2>The efficiency map</h2></div>
+  <p class="intro">Every command you have run, by how often (across) and how long a median run takes (up). Hover a dot for the full numbers.</p>
+  <div class="legend"><span class="lg built"><i></i>Built together</span><span class="lg core"><i></i>ACE Core</span></div>
+  <figure class="chart"><svg viewBox="0 0 880 440" role="img" aria-labelledby="sc-t sc-d" class="scatter">
+  <title id="sc-t">Efficiency map</title><desc id="sc-d">Each command plotted by number of runs (horizontal, log scale) against median minutes per run (vertical). Commands we built are gold, ACE Core commands are violet.</desc>
+  <text x="850" y="40" class="quad" text-anchor="end">heavy and frequent</text>
+  <text x="256" y="40" class="quad">deep dives</text>
+  <text x="850" y="378" class="quad" text-anchor="end">workhorses</text>
+  <text x="268" y="378" class="quad">quick tools</text>
+  <line x1="56" x2="856" y1="388" y2="388" class="gl"/><text x="46" y="392" class="ax" text-anchor="end">0</text><line x1="56" x2="856" y1="292.2105263157895" y2="292.2105263157895" class="gl"/><text x="46" y="296.2105263157895" class="ax" text-anchor="end">5</text><line x1="56" x2="856" y1="196.42105263157896" y2="196.42105263157896" class="gl"/><text x="46" y="200.42105263157896" class="ax" text-anchor="end">10</text><line x1="56" x2="856" y1="100.63157894736841" y2="100.63157894736841" class="gl"/><text x="46" y="104.63157894736841" class="ax" text-anchor="end">15</text><line y1="24" y2="388" x1="56" x2="56" class="gl v"/><text x="56" y="408" class="ax" text-anchor="middle">1</text><line y1="24" y2="388" x1="210.0889462106395" x2="210.0889462106395" class="gl v"/><text x="210.0889462106395" y="408" class="ax" text-anchor="middle">3</text><line y1="24" y2="388" x1="378.9555268946802" x2="378.9555268946802" class="gl v"/><text x="378.9555268946802" y="408" class="ax" text-anchor="middle">10</text><line y1="24" y2="388" x1="533.0444731053196" x2="533.0444731053196" class="gl v"/><text x="533.0444731053196" y="408" class="ax" text-anchor="middle">30</text><line y1="24" y2="388" x1="701.9110537893604" x2="701.9110537893604" class="gl v"/><text x="701.9110537893604" y="408" class="ax" text-anchor="middle">100</text><line y1="24" y2="388" x1="856" x2="856" class="gl v"/><text x="856" y="408" class="ax" text-anchor="middle">300</text>
+  <line x1="56" x2="856" y1="388" y2="388" class="base"/>
+  <text x="456" y="430" class="axt" text-anchor="middle">runs in 28 days (log scale)</text>
+  <text transform="translate(16 206) rotate(-90)" class="axt" text-anchor="middle">median minutes per run</text>
+  <g class="pt core"><circle cx="845.3177748199234" cy="322.86315789473684" r="14" class="hit"/><circle cx="845.3177748199234" cy="322.86315789473684" r="5" class="dot"/><title>/close
+278 runs · 3.4 min median · 15 tool calls · 14k tokens</title><text x="835.3177748199234" y="310.86315789473684" text-anchor="end" class="pl core">/close</text></g><g class="pt core"><circle cx="562.4594140732023" cy="313.2842105263158" r="14" class="hit"/><circle cx="562.4594140732023" cy="313.2842105263158" r="5" class="dot"/><title>/memory-consolidate
+37 runs · 3.9 min median · 13 tool calls · 13k tokens</title><text x="562.4594140732023" y="299.2842105263158" text-anchor="middle" class="pl core">/memory-consolidate</text></g><g class="pt core"><circle cx="495.7775307682144" cy="363.09473684210525" r="14" class="hit"/><circle cx="495.7775307682144" cy="363.09473684210525" r="5" class="dot"/><title>/start
+23 runs · 1.3 min median · 16 tool calls · 5.3k tokens</title><text x="505.7775307682144" y="367.09473684210525" text-anchor="start" class="pl core">/start</text></g><g class="pt core"><circle cx="435.8251722445554" cy="365.0105263157895" r="14" class="hit"/><circle cx="435.8251722445554" cy="365.0105263157895" r="5" class="dot"/><title>/commit
+15 runs · 1.2 min median · 6 tool calls · 3.6k tokens</title><text x="425.8251722445554" y="369.0105263157895" text-anchor="end" class="pl core">/commit</text></g><g class="pt core"><circle cx="426.1483836512302" cy="330.52631578947364" r="14" class="hit"/><circle cx="426.1483836512302" cy="330.52631578947364" r="5" class="dot"/><title>/eod
+14 runs · 3 min median · 22 tool calls · 13k tokens</title><text x="436.1483836512302" y="324.52631578947364" text-anchor="start" class="pl core">/eod</text></g><g class="pt core"><circle cx="364.177892421279" cy="376.5052631578947" r="14" class="hit"/><circle cx="364.177892421279" cy="376.5052631578947" r="5" class="dot"/><title>/sync-core
+9 runs · 0.6 min median · 3 tool calls · 1.9k tokens</title></g><g class="pt core"><circle cx="328.9290827904658" cy="347.7684210526316" r="14" class="hit"/><circle cx="328.9290827904658" cy="347.7684210526316" r="5" class="dot"/><title>/process-call
+7 runs · 2.1 min median · 11 tool calls · 7.9k tokens</title></g><g class="pt core"><circle cx="281.73622603391584" cy="320.9473684210526" r="14" class="hit"/><circle cx="281.73622603391584" cy="320.9473684210526" r="5" class="dot"/><title>/weekly-review
+5 runs · 3.5 min median · 23 tool calls · 15k tokens</title></g><g class="pt core"><circle cx="281.73622603391584" cy="315.2" r="14" class="hit"/><circle cx="281.73622603391584" cy="315.2" r="5" class="dot"/><title>/memory-migrate
+5 runs · 3.8 min median · 8 tool calls · 13k tokens</title></g><g class="pt core"><circle cx="250.4386017215287" cy="326.69473684210527" r="14" class="hit"/><circle cx="250.4386017215287" cy="326.69473684210527" r="5" class="dot"/><title>/brief
+4 runs · 3.2 min median · 22 tool calls · 12k tokens</title></g><g class="pt core"><circle cx="250.4386017215287" cy="370.7578947368421" r="14" class="hit"/><circle cx="250.4386017215287" cy="370.7578947368421" r="5" class="dot"/><title>/memory-sync
+4 runs · 0.9 min median · 3 tool calls · 3.7k tokens</title></g><g class="pt core"><circle cx="210.0889462106395" cy="303.7052631578947" r="14" class="hit"/><circle cx="210.0889462106395" cy="303.7052631578947" r="5" class="dot"/><title>/triage
+3 runs · 4.4 min median · 20 tool calls · 18k tokens</title></g><g class="pt core"><circle cx="153.21930086076435" cy="336.2736842105263" r="14" class="hit"/><circle cx="153.21930086076435" cy="336.2736842105263" r="5" class="dot"/><title>/artifact
+2 runs · 2.7 min median · 8 tool calls · 11k tokens</title></g><g class="pt core"><circle cx="153.21930086076435" cy="215.57894736842107" r="14" class="hit"/><circle cx="153.21930086076435" cy="215.57894736842107" r="5" class="dot"/><title>/memory-health
+2 runs · 9 min median · 42 tool calls · 42k tokens</title><text x="163.21930086076435" y="219.57894736842107" text-anchor="start" class="pl core">/memory-health</text></g><g class="pt core"><circle cx="153.21930086076435" cy="357.34736842105264" r="14" class="hit"/><circle cx="153.21930086076435" cy="357.34736842105264" r="5" class="dot"/><title>/prep
+2 runs · 1.6 min median · 11 tool calls · 6.3k tokens</title></g><g class="pt core"><circle cx="56" cy="313.2842105263158" r="14" class="hit"/><circle cx="56" cy="313.2842105263158" r="5" class="dot"/><title>/pulse
+1 run · 3.9 min median · 26 tool calls · 18k tokens</title></g><g class="pt core"><circle cx="56" cy="261.5578947368421" r="14" class="hit"/><circle cx="56" cy="261.5578947368421" r="5" class="dot"/><title>/optimize
+1 run · 6.6 min median · 15 tool calls · 17k tokens</title></g><g class="pt core"><circle cx="56" cy="297.9578947368421" r="14" class="hit"/><circle cx="56" cy="297.9578947368421" r="5" class="dot"/><title>/render-intelligence
+1 run · 4.7 min median · 13 tool calls · 23k tokens</title></g><g class="pt core"><circle cx="56" cy="351.6" r="14" class="hit"/><circle cx="56" cy="351.6" r="5" class="dot"/><title>/monthly-reflection
+1 run · 1.9 min median · 11 tool calls · 6.1k tokens</title></g><g class="pt core"><circle cx="56" cy="347.7684210526316" r="14" class="hit"/><circle cx="56" cy="347.7684210526316" r="5" class="dot"/><title>/blind-spots
+1 run · 2.1 min median · 14 tool calls · 7.8k tokens</title></g><g class="pt core"><circle cx="56" cy="372.6736842105263" r="14" class="hit"/><circle cx="56" cy="372.6736842105263" r="5" class="dot"/><title>/coach
+1 run · 0.8 min median · 5 tool calls · 2.8k tokens</title></g><g class="pt core"><circle cx="56" cy="366.9263157894737" r="14" class="hit"/><circle cx="56" cy="366.9263157894737" r="5" class="dot"/><title>/edge
+1 run · 1.1 min median · 5 tool calls · 2.9k tokens</title></g><g class="pt core"><circle cx="56" cy="378.42105263157896" r="14" class="hit"/><circle cx="56" cy="378.42105263157896" r="5" class="dot"/><title>/state
+1 run · 0.5 min median · 4 tool calls · 1.7k tokens</title></g><g class="pt core"><circle cx="56" cy="386.08421052631576" r="14" class="hit"/><circle cx="56" cy="386.08421052631576" r="5" class="dot"/><title>/capture
+1 run · 0.1 min median · 0 tool calls · 380 tokens</title></g><g class="pt built"><circle cx="415.75416227508083" cy="286.46315789473687" r="14" class="hit"/><circle cx="415.75416227508083" cy="286.46315789473687" r="6" class="dot"/><title>/va
+13 runs · 5.3 min median · 29 tool calls · 23k tokens</title><text x="425.75416227508083" y="280.46315789473687" text-anchor="start" class="pl built">/va</text></g><g class="pt built"><circle cx="347.65790258229305" cy="280.7157894736842" r="14" class="hit"/><circle cx="347.65790258229305" cy="280.7157894736842" r="6" class="dot"/><title>/harvest
+8 runs · 5.6 min median · 22 tool calls · 27k tokens</title><text x="357.65790258229305" y="274.7157894736842" text-anchor="start" class="pl built">/harvest</text></g><g class="pt built"><circle cx="281.73622603391584" cy="347.7684210526316" r="14" class="hit"/><circle cx="281.73622603391584" cy="347.7684210526316" r="6" class="dot"/><title>/movies
+5 runs · 2.1 min median · 6 tool calls · 8.6k tokens</title><line x1="281.73622603391584" y1="347.7684210526316" x2="388.3235233395403" y2="226.90526315789472" class="lead"/><text x="392.3235233395403" y="230.90526315789472" class="pl built">/movies</text></g><g class="pt built"><circle cx="250.4386017215287" cy="317.1157894736842" r="14" class="hit"/><circle cx="250.4386017215287" cy="317.1157894736842" r="6" class="dot"/><title>/compass-review
+4 runs · 3.7 min median · 14 tool calls · 12k tokens</title><line x1="250.4386017215287" y1="317.1157894736842" x2="388.3235233395403" y2="169.43157894736845" class="lead"/><text x="392.3235233395403" y="173.43157894736845" class="pl built">/compass-review</text></g><g class="pt built"><circle cx="210.0889462106395" cy="343.93684210526317" r="14" class="hit"/><circle cx="210.0889462106395" cy="343.93684210526317" r="6" class="dot"/><title>/recap
+3 runs · 2.3 min median · 3 tool calls · 9.5k tokens</title><line x1="210.0889462106395" y1="343.93684210526317" x2="388.3235233395403" y2="207.74736842105264" class="lead"/><text x="392.3235233395403" y="211.74736842105264" class="pl built">/recap</text></g><g class="pt built"><circle cx="210.0889462106395" cy="324.7789473684211" r="14" class="hit"/><circle cx="210.0889462106395" cy="324.7789473684211" r="6" class="dot"/><title>/cmo
+3 runs · 3.3 min median · 13 tool calls · 11k tokens</title><line x1="210.0889462106395" y1="324.7789473684211" x2="388.3235233395403" y2="188.58947368421053" class="lead"/><text x="392.3235233395403" y="192.58947368421053" class="pl built">/cmo</text></g><g class="pt built"><circle cx="153.21930086076435" cy="192.58947368421053" r="14" class="hit"/><circle cx="153.21930086076435" cy="192.58947368421053" r="6" class="dot"/><title>/dream-temple
+2 runs · 10.2 min median · 29 tool calls · 40k tokens</title><text x="163.21930086076435" y="196.58947368421053" text-anchor="start" class="pl built">/dream-temple</text></g><g class="pt built"><circle cx="56" cy="46.989473684210516" r="14" class="hit"/><circle cx="56" cy="46.989473684210516" r="6" class="dot"/><title>/know-thyself
+1 run · 17.8 min median · 49 tool calls · 66k tokens</title><text x="66" y="50.989473684210516" text-anchor="start" class="pl built">/know-thyself</text></g><g class="pt built"><circle cx="56" cy="288.37894736842105" r="14" class="hit"/><circle cx="56" cy="288.37894736842105" r="6" class="dot"/><title>/thread
+1 run · 5.2 min median · 4 tool calls · 19k tokens</title><text x="66" y="302.37894736842105" text-anchor="start" class="pl built">/thread</text></g><g class="pt built"><circle cx="56" cy="370.7578947368421" r="14" class="hit"/><circle cx="56" cy="370.7578947368421" r="6" class="dot"/><title>/lightning
+1 run · 0.9 min median · 6 tool calls · 3.9k tokens</title><text x="66" y="376.7578947368421" text-anchor="start" class="pl built">/lightning</text></g><g class="pt built"><circle cx="56" cy="269.2210526315789" r="14" class="hit"/><circle cx="56" cy="269.2210526315789" r="6" class="dot"/><title>/graphify
+1 run · 6.2 min median · 11 tool calls · 11k tokens</title><text x="66" y="263.2210526315789" text-anchor="start" class="pl built">/graphify</text></g>
+</svg></figure>
+  <div class="insight">
+    <img src="glyphs/sun-light.png" alt="" width="22" height="22">
+    <div><h4>The one number worth knowing</h4>
+    <p><code>/close</code> is <b>60% of every command run</b> and <b>64% of every token</b> SAGE spends on commands: 278 runs, ending 248 of your 276 chats, about 4 million tokens. It is mandatory by design and it is doing its job. It is also, by a mile, the most expensive habit in the system, so it is the first place to look whenever usage limits feel tight.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><img src="glyphs/arm-light.png" alt="" width="20" height="20"><p class="kicker">Part three</p><h2>The daily rhythm: ACE Core</h2></div>
+  <p class="intro">The commands that shipped with ACE, ranked by use. Bar length uses a square-root scale so the small ones stay visible next to /close.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Command</th><th>What it does</th><th>Runs</th><th class="num">Days</th><th class="num">Min</th><th class="num">Tools</th><th class="num">Tokens</th></tr></thead>
+    <tbody>
+  <tr><td><code>/close</code></td><td class="desc">Logs what shipped and updates the handoff</td>
+  <td class="barcell"><span class="rbar" style="width:100.0%"></span><span class="rn">278</span></td>
+  <td class="num">26</td><td class="num">3.4</td><td class="num">15</td><td class="num">14k</td></tr>
+  <tr><td><code>/memory-consolidate</code></td><td class="desc">Curates the memory layer (proposal-first)</td>
+  <td class="barcell"><span class="rbar" style="width:36.5%"></span><span class="rn">37</span></td>
+  <td class="num">21</td><td class="num">3.9</td><td class="num">13</td><td class="num">13k</td></tr>
+  <tr><td><code>/start</code></td><td class="desc">Morning protocol across all three Triad legs</td>
+  <td class="barcell"><span class="rbar" style="width:28.8%"></span><span class="rn">23</span></td>
+  <td class="num">22</td><td class="num">1.3</td><td class="num">16</td><td class="num">5.3k</td></tr>
+  <tr><td><code>/commit</code></td><td class="desc">Saves the vault and syncs to GitHub</td>
+  <td class="barcell"><span class="rbar" style="width:23.2%"></span><span class="rn">15</span></td>
+  <td class="num">10</td><td class="num">1.2</td><td class="num">6</td><td class="num">3.6k</td></tr>
+  <tr><td><code>/eod</code></td><td class="desc">End-of-day closure and truth capture</td>
+  <td class="barcell"><span class="rbar" style="width:22.4%"></span><span class="rn">14</span></td>
+  <td class="num">13</td><td class="num">3</td><td class="num">22</td><td class="num">13k</td></tr>
+  <tr><td><code>/sync-core</code></td><td class="desc">Pulls ACE Core updates</td>
+  <td class="barcell"><span class="rbar" style="width:18.0%"></span><span class="rn">9</span></td>
+  <td class="num">9</td><td class="num">0.6</td><td class="num">3</td><td class="num">1.9k</td></tr>
+  <tr><td><code>/process-call</code></td><td class="desc">Decisions and actions out of a call</td>
+  <td class="barcell"><span class="rbar" style="width:15.9%"></span><span class="rn">7</span></td>
+  <td class="num">5</td><td class="num">2.1</td><td class="num">11</td><td class="num">7.9k</td></tr>
+  <tr><td><code>/weekly-review</code></td><td class="desc">Weekly calibration through the three gates</td>
+  <td class="barcell"><span class="rbar" style="width:13.4%"></span><span class="rn">5</span></td>
+  <td class="num">5</td><td class="num">3.5</td><td class="num">23</td><td class="num">15k</td></tr>
+  <tr><td><code>/memory-migrate</code></td><td class="desc">Memory cleanup passes</td>
+  <td class="barcell"><span class="rbar" style="width:13.4%"></span><span class="rn">5</span></td>
+  <td class="num">5</td><td class="num">3.8</td><td class="num">8</td><td class="num">13k</td></tr>
+  <tr><td><code>/brief</code></td><td class="desc">Quick morning orientation</td>
+  <td class="barcell"><span class="rbar" style="width:12.0%"></span><span class="rn">4</span></td>
+  <td class="num">4</td><td class="num">3.2</td><td class="num">22</td><td class="num">12k</td></tr>
+  <tr><td><code>/memory-sync</code></td><td class="desc">Rebuilds the memory index</td>
+  <td class="barcell"><span class="rbar" style="width:12.0%"></span><span class="rn">4</span></td>
+  <td class="num">4</td><td class="num">0.9</td><td class="num">3</td><td class="num">3.7k</td></tr>
+  <tr><td><code>/triage</code></td><td class="desc">Routes the inbox</td>
+  <td class="barcell"><span class="rbar" style="width:10.4%"></span><span class="rn">3</span></td>
+  <td class="num">3</td><td class="num">4.4</td><td class="num">20</td><td class="num">18k</td></tr>
+  <tr><td><code>/artifact</code></td><td class="desc">Catalogs a creative artifact</td>
+  <td class="barcell"><span class="rbar" style="width:8.5%"></span><span class="rn">2</span></td>
+  <td class="num">2</td><td class="num">2.7</td><td class="num">8</td><td class="num">11k</td></tr>
+  <tr><td><code>/memory-health</code></td><td class="desc">Audits the memory corpus</td>
+  <td class="barcell"><span class="rbar" style="width:8.5%"></span><span class="rn">2</span></td>
+  <td class="num">2</td><td class="num">9</td><td class="num">42</td><td class="num">42k</td></tr>
+  <tr><td><code>/prep</code></td><td class="desc">Briefing before a meeting</td>
+  <td class="barcell"><span class="rbar" style="width:8.5%"></span><span class="rn">2</span></td>
+  <td class="num">2</td><td class="num">1.6</td><td class="num">11</td><td class="num">6.3k</td></tr>
+  <tr><td><code>/pulse</code></td><td class="desc">Nine-signal Triad diagnostic</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">3.9</td><td class="num">26</td><td class="num">18k</td></tr>
+  <tr><td><code>/optimize</code></td><td class="desc">Vault optimization pass</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">6.6</td><td class="num">15</td><td class="num">17k</td></tr>
+  <tr><td><code>/render-intelligence</code></td><td class="desc">Contemplative intelligence reading</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">4.7</td><td class="num">13</td><td class="num">23k</td></tr>
+  <tr><td><code>/monthly-reflection</code></td><td class="desc">Monthly review with Wheel of Life</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">1.9</td><td class="num">11</td><td class="num">6.1k</td></tr>
+  <tr><td><code>/blind-spots</code></td><td class="desc">What you might be missing</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">2.1</td><td class="num">14</td><td class="num">7.8k</td></tr>
+  <tr><td><code>/coach</code></td><td class="desc">Open coaching conversation</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">0.8</td><td class="num">5</td><td class="num">2.8k</td></tr>
+  <tr><td><code>/edge</code></td><td class="desc">Guided work on one growth edge</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">1.1</td><td class="num">5</td><td class="num">2.9k</td></tr>
+  <tr><td><code>/state</code></td><td class="desc">Mid-day energy update</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">0.5</td><td class="num">4</td><td class="num">1.7k</td></tr>
+  <tr><td><code>/capture</code></td><td class="desc">Zero-friction inbox drop</td>
+  <td class="barcell"><span class="rbar" style="width:6.0%"></span><span class="rn">1</span></td>
+  <td class="num">1</td><td class="num">0.1</td><td class="num">0</td><td class="num">380</td></tr></tbody>
+  </table></div>
+  <p class="zero"><b>Never run from a chat in 28 days:</b> <code>/audit-energy</code> <code>/codex</code> <code>/council</code> <code>/decide</code> <code>/followup</code> <code>/ghostwrite</code> <code>/memory-recall</code> <code>/nurture</code> <code>/oracle</code> <code>/project</code> <code>/regulate</code> <code>/security</code> <code>/skill-creator</code> <code>/weekly-review-prep</code></p>
+</section>
+
+<section>
+  <div class="sh"><img src="glyphs/scarab-light.png" alt="" width="20" height="20"><p class="kicker">Part four</p><h2>New arrivals</h2></div>
+  <div class="arrivals">
+    <div><span class="date">Oct 8</span><code>/graphify</code><p>Built today. Maps any part of the vault as a knowledge graph.</p></div>
+    <div><span class="date">Oct 8</span><code>Superpowers</code><p>Fifteen engineering skills (planning, debugging, test-first, code review), installed globally. For code and skill building only, never coaching or writing.</p></div>
+    <div><span class="date">Oct 7</span><code>/cmo</code><p>Built together. The numbers half of marketing.</p></div>
+    <div><span class="date">Oct 6</span><code>/project</code><p>From ACE Core. Gives anything longer than a day its own folder, README and pulse, tied to an outcome.</p></div>
+    <div><span class="date">Oct 5</span><code>/know-thyself</code><p>Built together. The woven chart reading.</p></div>
+    <div><span class="date">Oct 3</span><code>/movies</code><p>Built together. The family film library.</p></div>
+    <div><span class="date">Oct 2</span><code>/compass-review</code><p>Built together. The product oracle.</p></div>
+    <div><span class="date">Sep 25</span><code>/oracle</code><p>From ACE Core. One question, one cited answer across the whole system.</p></div>
+    <div><span class="date">Sep 25</span><code>/nurture</code><p>From ACE Core. The next step with one person.</p></div>
+  </div>
+  <p class="intro">Five of the eleven commands we built arrived in the last seven days. The build rate is accelerating, which is a reason to let the newest ones earn their place before adding more.</p>
+</section>
+
+<section>
+  <div class="sh"><img src="glyphs/crescent-light.png" alt="" width="20" height="20"><p class="kicker">Part five</p><h2>Underused, worth a look</h2></div>
+  <p class="intro">Based on 28 days of runs, measured against the calibration you set. These are observations, not assignments.</p>
+  <div class="under"><div class="uc"><code>/lightning</code><h4>The list that unlocks Cohort 2</h4><span class="us">1 run in 28 days</span><p>Your own calibration says Cohort 2 and the 2027 retreat calendar stay context until the lightning list exists. The command that builds that list has fired once, and it misses about 14 of every 15 chances. Cheapest command in the system, highest leverage per second.</p></div><div class="uc"><code>/recap</code><h4>The open door</h4><span class="us">3 runs vs 13 /va and 7 /process-call</span><p>Tripwire 4 says a session that ends with no invitation drafted gets one the same day. If recaps are being drafted inside the /va wrap, ignore this card. If they are not, this is the gap.</p></div><div class="uc"><code>/followup</code><h4>The 48-hour robe</h4><span class="us">0 direct runs</span><p>follow-ups.md is alive and kept current by /va and by hand, so nothing is falling through yet. Tripwire 2 names a follow-up older than 48 hours as Edge 2, and this is the command built to see that coming.</p></div><div class="uc"><code>/oracle</code><h4>Ask the whole system one question</h4><span class="us">Arrived Sep 25 · 0 runs</span><p>&quot;What did we decide about X,&quot; &quot;when did Y ship,&quot; &quot;find the chat where we talked about Z.&quot; One ranked, cited answer across memory, logs and past chats. Probably the most useful command you have never typed.</p></div><div class="uc"><code>/nurture</code><h4>The next step with one person</h4><span class="us">Arrived Sep 25 · 0 runs</span><p>Reads the full message history with someone, checks whether a reply is actually owed, and proposes exactly one action. Read-only until you ask. Lives on the Next step button in the Comms view.</p></div><div class="uc"><code>/regulate · /state · /coach</code><h4>The other half of the system</h4><span class="us">3 coaching runs out of 465</span><p>ACE was built as a coherence system, and 28 days in it is running almost entirely as a very good back office. That may be exactly right; you are the professional here. Just noting that /regulate has never been opened, and Tripwire 1 says regulation comes before insight.</p></div></div>
+</section>
+
+<section>
+  <div class="sh"><img src="glyphs/ibis-light.png" alt="" width="20" height="20"><p class="kicker">Part six</p><h2>When the commands fire</h2></div>
+  <div class="when">
+    <div class="panel"><h4>By hour, Costa Rica time</h4><div class="hours"><div class="hc" style="--a:0.14" title="12 AM: 5 runs"><span>12 AM</span></div><div class="hc" style="--a:0.08" title="1 AM: 1 run"><span></span></div><div class="hc" style="--a:0.06" title="2 AM: 0 runs"><span></span></div><div class="hc" style="--a:0.06" title="3 AM: 0 runs"><span>3 AM</span></div><div class="hc" style="--a:0.06" title="4 AM: 0 runs"><span></span></div><div class="hc" style="--a:0.21" title="5 AM: 9 runs"><span></span></div><div class="hc" style="--a:0.53" title="6 AM: 29 runs"><span>6 AM</span></div><div class="hc" style="--a:0.51" title="7 AM: 28 runs"><span></span></div><div class="hc" style="--a:0.25" title="8 AM: 12 runs"><span></span></div><div class="hc" style="--a:0.77" title="9 AM: 44 runs"><span>9 AM</span></div><div class="hc" style="--a:0.40" title="10 AM: 21 runs"><span></span></div><div class="hc" style="--a:0.51" title="11 AM: 28 runs"><span></span></div><div class="hc" style="--a:0.68" title="12 PM: 38 runs"><span>12 PM</span></div><div class="hc" style="--a:0.81" title="1 PM: 46 runs"><span></span></div><div class="hc" style="--a:0.63" title="2 PM: 35 runs"><span></span></div><div class="hc" style="--a:0.68" title="3 PM: 38 runs"><span>3 PM</span></div><div class="hc" style="--a:1.00" title="4 PM: 58 runs"><span></span></div><div class="hc" style="--a:0.63" title="5 PM: 35 runs"><span></span></div><div class="hc" style="--a:0.29" title="6 PM: 14 runs"><span>6 PM</span></div><div class="hc" style="--a:0.14" title="7 PM: 5 runs"><span></span></div><div class="hc" style="--a:0.27" title="8 PM: 13 runs"><span></span></div><div class="hc" style="--a:0.09" title="9 PM: 2 runs"><span>9 PM</span></div><div class="hc" style="--a:0.06" title="10 PM: 0 runs"><span></span></div><div class="hc" style="--a:0.12" title="11 PM: 4 runs"><span></span></div></div><p class="note">Busiest hour: 4 PM, 58 runs. Darker means more runs.</p></div>
+    <div class="panel"><h4>By weekday</h4><div class="wds"><div class="wb" title="Sun: 31 runs"><span class="wv">31</span><i style="height:31%"></i><span class="wl">Sun</span></div><div class="wb" title="Mon: 50 runs"><span class="wv">50</span><i style="height:51%"></i><span class="wl">Mon</span></div><div class="wb" title="Tue: 99 runs"><span class="wv">99</span><i style="height:100%"></i><span class="wl">Tue</span></div><div class="wb" title="Wed: 95 runs"><span class="wv">95</span><i style="height:96%"></i><span class="wl">Wed</span></div><div class="wb" title="Thu: 84 runs"><span class="wv">84</span><i style="height:85%"></i><span class="wl">Thu</span></div><div class="wb" title="Fri: 70 runs"><span class="wv">70</span><i style="height:71%"></i><span class="wl">Fri</span></div><div class="wb" title="Sat: 36 runs"><span class="wv">36</span><i style="height:36%"></i><span class="wl">Sat</span></div></div></div>
+    <div class="panel"><h4>By week</h4><div class="wks"><div class="wk" title="Sep 11 to 17: 113 runs"><span class="wkl">Sep 11 to 17</span><span class="wkt"><i style="width:68%"></i></span><span class="wkv">113</span></div><div class="wk" title="Sep 18 to 24: 85 runs"><span class="wkl">Sep 18 to 24</span><span class="wkt"><i style="width:51%"></i></span><span class="wkv">85</span></div><div class="wk" title="Sep 25 to Oct 1: 101 runs"><span class="wkl">Sep 25 to Oct 1</span><span class="wkt"><i style="width:61%"></i></span><span class="wkv">101</span></div><div class="wk" title="Oct 2 to 8: 166 runs"><span class="wkl">Oct 2 to 8</span><span class="wkt"><i style="width:100%"></i></span><span class="wkv">166</span></div></div><p class="note">This week is the busiest yet, up 64% on last week.</p></div>
+  </div>
+</section>
+
+<section class="method">
+  <h4>How this was measured</h4>
+  <p>Source: all 276 SAGE chat transcripts in this vault, September 11 to October 8, 2026. A run is a typed slash command or SAGE invoking the skill itself; both are counted. A run lasts until your next message. Minutes, tool calls and tokens are medians per run, so one long session cannot skew a command. Front-desk passes /va makes inside /start and /eod are counted under those commands, not under /va. Zero chat runs is not the same as zero use: a scheduled task, a button in ACE, or plain conversation can do the same work without the command. Counts only, no client names, per the front-desk privacy rule.</p>
+</section>
+</main>
+<footer><img src="glyphs/mark-light.png" alt="" width="26" height="27"><span>Prepared by SAGE for Christopher Hager · Tap the Wisdom of your Higher Self</span></footer>
+</body></html>
